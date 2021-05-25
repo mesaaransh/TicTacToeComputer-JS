@@ -1,0 +1,266 @@
+body, div, table, td, tr, button, p, input{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+table{
+  border-collapse: collapse;
+  height: inherit;
+  width: 100%;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+td{
+  border-width: 6px;
+  border-style: solid;
+
+  height: 75px;
+  width: 75px;
+
+}
+td.top{
+  border-top-width: 0;
+}
+td.bottom{
+  border-bottom-width: 0;
+}
+td.right{
+  border-right-width: 0;
+}
+td.left{
+  border-left-width: 0;
+}
+
+.main{
+  height: 100vh;
+  display: flex;
+}
+
+.p1{
+  width: 50%;
+  height: inherit;
+  background-color: #0A0807;
+
+  border-right: 2px solid;
+  border-right-color: #FFB600;
+
+  transition-duration: .1s;
+}
+
+.p2{
+  width: 50%;
+  height: inherit;
+  background-color: #0A0807;
+
+  border-left: 2px solid;
+  border-left-color: #FFB600;
+
+  transition-duration: .1s;
+}
+
+.controls{
+  height: auto;
+  width: auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50% , 50%);
+}
+
+.difficulty{
+  background-color: #FFB600;
+  z-index: 1001;
+  height: 10px;
+  width: 350px;
+}
+
+.difbtn{
+  margin: 0;
+  padding: 0;
+  width: 110px;
+  cursor: pointer;
+  color: #C88F00;
+
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 15px;
+
+  background-color: inherit;
+
+  border: 0px solid;
+
+  transition-duration: .1s;
+}
+
+.gamecont{
+  background-color: #FFB600;
+  z-index: 1001;
+  height: 350px;
+  width: 350px;
+}
+
+.buttoncont{
+  height: 300px;
+  width: 300px;
+}
+
+.tictac{
+  height: inherit;
+  width: inherit;
+  background-color: inherit;
+
+  margin: 10px;
+  padding: 0;
+
+  border: 0 solid;
+
+  transition-duration: .15s;
+}
+
+.tictac:disabled{
+  color: black;
+}
+
+.ticTacFill{
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-size: 50px;
+  font-family: lato;
+  font-weight: bold;
+}
+
+.X{
+  color: #000;
+}
+
+.O{
+  color: #000;
+  font-size: 55px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* player info and instructions*/
+
+
+.playerhead {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  color: #FFB600;
+
+  font-size: 60px;
+  font-family: lato;
+  font-weight: 700;
+
+  transition-duration: .1s;
+}
+
+.playerscore {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  font-size: 20px;
+  font-family: lato;
+  font-weight: 700;
+}
+
+.headcont{
+  margin: 35px 0;
+}
+
+.triangle-left {
+	width: 0;
+	height: 0;
+  float: right;
+  margin-top: -49px;
+  margin-right: 20px;
+	border-top: 10px solid transparent;
+	border-right: 15px solid #FFB600;
+	border-bottom: 10px solid transparent;
+}
+
+.triangle-right {
+	width: 0;
+	height: 0;
+  float: left;
+  position: fixed;
+  margin-top: 27px;
+  margin-left: 20px;
+	border-top: 10px solid transparent;
+	border-left: 15px solid #FFB600;
+	border-bottom: 10px solid transparent;
+}
+
+.winner{
+  opacity: 25%;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+}
+
+#reset{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50% , 110%);
+
+  padding: -50px;
+
+  border: 0px solid #000;
+
+  background-color: #0A0807;
+
+  font-size: 25px;
+  font-family: cursive;
+  color: #FFB600;
+}
+
+
+
+
+
+
+
+/* game rules */
+
+
+.rules{
+  scroll-behavior: smooth;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffde00;
+
+  display: flex;
+}
+
+.rulehead{
+  width: 50%;
+  text-align: center;
+  margin-top: 30px;
+  padding: 0;
+
+  font-size: 50px;
+  font-family: lato;
+  font-weight: 700;
+}

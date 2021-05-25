@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./Master.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="controls">
+      <div class="difficulty">
+        <input type="submit" name="diff" id="easy" class="difbtn" value="Easy" onclick="easy()" style="margin-left: 5px;">
+        <input type="submit" name="diff" id="medium" class="difbtn" value="Medium" onclick="medium()">
+        <input type="submit" name="diff" id="hard" class="difbtn" value="Hard" onclick="hard()" style="color: #000">
+      </div>
+      <div class="gamecont">
+        <div class="buttoncont" style="padding-top: 24px; margin-left: 24px;">
+          <table>
+            <tr>
+              <td class="top left">
+                <button class="tictac" id="b1" onclick="click1(); wintest(); countit();">
+                  <p class="ticTacFill" id="t1"></p>
+                </button>
+              </td>
+              <td class="top">
+                <button class="tictac" id="b2" onclick="click2(); wintest(); countit();">
+                  <p class="ticTacFill" id="t2"></p>
+                </button>
+              </td>
+              <td class="top right">
+                <button class="tictac" id="b3" onclick="click3(); wintest(); countit();">
+                  <p class="ticTacFill" id="t3"></p>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="left">
+                <button class="tictac" id="b4" onclick="click4(); wintest(); countit();">
+                  <p class="ticTacFill" id="t4"></p>
+                </button>
+              </td>
+              <td>
+                <button class="tictac" id="b5" onclick="click5(); wintest(); countit();">
+                  <p class="ticTacFill" id="t5"></p>
+                </button>
+              </td>
+              <td class="right">
+                <button class="tictac" id="b6" onclick="click6(); wintest(); countit();">
+                  <p class="ticTacFill" id="t6"></p>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="bottom left">
+                <button class="tictac" id="b7" onclick="click7(); wintest(); countit();">
+                  <p class="ticTacFill" id="t7"></p>
+                </button>
+              </td>
+              <td class="bottom ">
+                <button class="tictac" id="b8" onclick="click8(); wintest(); countit();">
+                  <p class="ticTacFill" id="t8"></p>
+                </button>
+              </td>
+              <td class="bottom right">
+                <button class="tictac" id="b9" onclick="click9(); wintest(); countit();">
+                  <p class="ticTacFill" id="t9"></p>
+                </button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <p id="reset"></p>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="p1" id="X">
+        <div class="headcont">
+          <p class="playerhead" id="playerx">Player X <sub class="playerscore" id="scorex">0</sub></p>
+          <div class="triangle-left" id="trileft"></div>
+        </div>
+        <img class="winner" id="Xwin" src="./Winner.png" alt="">
+      </div>
+
+      <div class="p2" id="O">
+        <div class="headcont">
+          <div class="triangle-right" id="triright" hidden></div>
+          <p class="playerhead" id="playero">Player O <sub class="playerscore" id="scoreo">0</sub> </p>
+        </div>
+        <img class="winner" id="Owin" src="./Winner.png" alt="" style="height: 540px; transform: scaleX(-1); float: right;">
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./Script.js"></script>
+  </body>
+</html>
